@@ -49,8 +49,6 @@
       <a href="#about" class="hero__btn">Descubre más</a>
     </div>
 
-    <!-- Logo central VERNE -->
-    <div class="hero__center-logo">VERNE</div>
 
     <div class="hero__scroll">
       scroll
@@ -180,30 +178,26 @@
   </footer>
 
   <script>
-    // Navbar scroll effect
+    /* ---- Navbar scroll ---- */
+    const navbar = document.getElementById('navbar');
     window.addEventListener('scroll', () => {
-      const navbar = document.getElementById('navbar');
-      if (window.scrollY > 50) {
-        navbar.classList.add('scrolled');
-      } else {
-        navbar.classList.remove('scrolled');
-      }
+      navbar.classList.toggle('scrolled', window.scrollY > 50);
     });
 
-    // Hamburger menu toggle
-    const burger = document.getElementById('burger');
+    /* ---- Hamburger menu ---- */
+    const burger   = document.getElementById('burger');
     const navLinks = document.getElementById('navLinks');
     burger.addEventListener('click', () => {
       navLinks.classList.toggle('open');
       burger.classList.toggle('active');
     });
-    // Close menu on link click
     navLinks.querySelectorAll('a').forEach(link => {
       link.addEventListener('click', () => {
         navLinks.classList.remove('open');
         burger.classList.remove('active');
       });
     });
+
   </script>
 
 </body>
