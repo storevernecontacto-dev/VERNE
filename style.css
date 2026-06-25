@@ -201,7 +201,7 @@ body {
 .hero__bg {
   position: absolute;
   inset: 0;
-  background: url('IMG/playapñol.png') center center / cover no-repeat;
+  background: url('IMG/imgmejorada.png') center center / cover no-repeat;
   filter: brightness(0.72) saturate(0.92);
   transform: scale(1.06);
   transition: transform 12s ease-out;
@@ -534,7 +534,7 @@ body {
 .cta {
   background:
     linear-gradient(rgba(26,20,12,0.82), rgba(26,20,12,0.88)),
-    url('IMG/playapñol.png') center center / cover no-repeat fixed;
+    url('IMG/imgmejorada.png') center center / cover no-repeat fixed;
   padding: 7rem 4rem;
   text-align: center;
 }
@@ -640,11 +640,43 @@ body {
   text-align: center;
 }
 
-/* ===== BACK TO TOP ===== */
-.back-to-top {
+/* ===== WHATSAPP FLOAT ===== */
+.whatsapp-float {
   position: fixed;
   bottom: 1.8rem;
   right: 1.8rem;
+  width: 58px;
+  height: 58px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #25D366;
+  color: #fff;
+  border-radius: 50%;
+  text-decoration: none;
+  z-index: 95;
+  box-shadow: 0 8px 24px rgba(37, 211, 102, 0.45);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation: wa-pulse 2.4s infinite;
+}
+.whatsapp-float:hover {
+  transform: scale(1.08) translateY(-2px);
+  box-shadow: 0 12px 30px rgba(37, 211, 102, 0.6);
+}
+@keyframes wa-pulse {
+  0%   { box-shadow: 0 8px 24px rgba(37,211,102,0.45), 0 0 0 0 rgba(37,211,102,0.45); }
+  70%  { box-shadow: 0 8px 24px rgba(37,211,102,0.45), 0 0 0 16px rgba(37,211,102,0); }
+  100% { box-shadow: 0 8px 24px rgba(37,211,102,0.45), 0 0 0 0 rgba(37,211,102,0); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .whatsapp-float { animation: none; }
+}
+
+/* ===== BACK TO TOP ===== */
+.back-to-top {
+  position: fixed;
+  bottom: 6.5rem;
+  right: 2.1rem;
   width: 46px;
   height: 46px;
   display: flex;
@@ -800,7 +832,8 @@ body {
   .cta__actions { flex-direction: column; }
   .cta__actions .btn { width: 100%; }
 
-  .back-to-top { bottom: 1.2rem; right: 1.2rem; width: 42px; height: 42px; }
+  .whatsapp-float { bottom: 1.2rem; right: 1.2rem; width: 52px; height: 52px; }
+  .back-to-top { bottom: 5.4rem; right: 1.45rem; width: 42px; height: 42px; }
 }
 
 /* ===== RESPONSIVE — SMALL PHONES ===== */
