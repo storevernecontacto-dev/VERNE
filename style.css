@@ -201,8 +201,8 @@ body {
 .hero__bg {
   position: absolute;
   inset: 0;
-  background: url('IMG/imgdeprueba.png') center center / cover no-repeat;
-  filter: brightness(0.78) saturate(0.95);
+  background: url('IMG/nuevaportadadeprueba.png') center center / cover no-repeat;
+  filter: brightness(0.95) saturate(1.12) contrast(1.02);
   transform: scale(1.06);
   transition: transform 12s ease-out;
 }
@@ -215,9 +215,9 @@ body {
   inset: 0;
   background: linear-gradient(
     180deg,
-    rgba(26, 20, 12, 0.28) 0%,
-    rgba(26, 20, 12, 0.10) 35%,
-    rgba(26, 20, 12, 0.78) 100%
+    rgba(26, 20, 12, 0.18) 0%,
+    rgba(26, 20, 12, 0.04) 38%,
+    rgba(26, 20, 12, 0.62) 100%
   );
 }
 
@@ -225,6 +225,7 @@ body {
   position: relative;
   z-index: 2;
   max-width: 720px;
+  text-shadow: 0 2px 22px rgba(0, 0, 0, 0.45);
 }
 
 .hero__subtitle {
@@ -532,13 +533,25 @@ body {
 
 /* ===== CTA / CONTACTO ===== */
 .cta {
+  position: relative;
   background:
-    linear-gradient(rgba(26,20,12,0.82), rgba(26,20,12,0.88)),
-    url('IMG/imgdeprueba.png') center center / cover no-repeat fixed;
-  padding: 7rem 4rem;
+    linear-gradient(rgba(20,16,10,0.32), rgba(20,16,10,0.48)),
+    url('IMG/contacto.png') center center / cover no-repeat fixed;
+  padding: 8rem 4rem;
   text-align: center;
+  overflow: hidden;
+}
+/* Velo radial sutil: oscurece solo detrás del texto, deja ver la villa en los bordes */
+.cta::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse at center, rgba(20,16,10,0.55) 0%, rgba(20,16,10,0.15) 70%, rgba(20,16,10,0) 100%);
+  pointer-events: none;
 }
 .cta__container {
+  position: relative;
+  z-index: 1;
   max-width: 720px;
   margin: 0 auto;
 }
@@ -559,13 +572,16 @@ body {
   color: var(--cream);
   letter-spacing: -0.6px;
   margin-bottom: 1.4rem;
+  text-shadow: 0 2px 18px rgba(0,0,0,0.55);
 }
 .cta__text {
   font-size: 1.05rem;
   line-height: 1.75;
-  color: rgba(247, 243, 236, 0.8);
+  color: rgba(247, 243, 236, 0.92);
   margin-bottom: 2.4rem;
+  text-shadow: 0 1px 12px rgba(0,0,0,0.5);
 }
+.cta__tag { text-shadow: 0 1px 10px rgba(0,0,0,0.5); }
 .cta__actions {
   display: flex;
   flex-wrap: wrap;
