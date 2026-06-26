@@ -94,6 +94,14 @@ body {
   color: var(--cream);
   transform: translateY(-3px);
 }
+/* Botón de correo: texto largo, sin mayúsculas ni espaciado para que no se descuadre */
+.btn--email {
+  text-transform: none;
+  letter-spacing: 0.2px;
+  font-weight: 600;
+  max-width: 100%;
+  overflow-wrap: anywhere;
+}
 
 /* ===== NAVBAR ===== */
 .navbar {
