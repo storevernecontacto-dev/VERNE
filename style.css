@@ -201,8 +201,8 @@ body {
 .hero__bg {
   position: absolute;
   inset: 0;
-  background: url('IMG/imgmejorada.png') center center / cover no-repeat;
-  filter: brightness(0.72) saturate(0.92);
+  background: url('IMG/imgdeprueba.png') center center / cover no-repeat;
+  filter: brightness(0.78) saturate(0.95);
   transform: scale(1.06);
   transition: transform 12s ease-out;
 }
@@ -534,7 +534,7 @@ body {
 .cta {
   background:
     linear-gradient(rgba(26,20,12,0.82), rgba(26,20,12,0.88)),
-    url('IMG/imgmejorada.png') center center / cover no-repeat fixed;
+    url('IMG/imgdeprueba.png') center center / cover no-repeat fixed;
   padding: 7rem 4rem;
   text-align: center;
 }
