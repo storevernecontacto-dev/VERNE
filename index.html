@@ -40,7 +40,7 @@
     <ul class="navbar__links" id="navLinks">
       <li><a href="#hero">Inicio</a></li>
       <li><a href="#about">Acerca de</a></li>
-      <li><a href="#works">Tienda</a></li>
+      <li><a href="#stores">Tiendas</a></li>
       <li><a href="#services">Cómo Comprar</a></li>
       <li><a href="#vision">Visión</a></li>
       <li><a href="#contact" class="navbar__cta">Contacto</a></li>
@@ -113,10 +113,129 @@
     </div>
   </section>
 
-  <!-- BLOQUE 3: OBRAS -->
-  <section class="section section--alt" id="works">
+  <!-- BLOQUE: NUESTRAS TIENDAS -->
+  <section class="section section--alt" id="stores">
     <div class="section__container">
-      <span class="section__tag reveal">02 — Tienda</span>
+      <span class="section__tag reveal">02 — Tiendas</span>
+      <h2 class="section__title reveal">Nuestras Tiendas</h2>
+      <div class="section__divider reveal"></div>
+      <div class="stores__head">
+        <p class="stores__intro reveal">Explora nuestras tiendas por nicho. Desliza para descubrir cada catálogo, con productos seleccionados y envío a tu puerta.</p>
+        <div class="stores__nav-group reveal">
+          <button class="stores__nav" id="storesPrev" aria-label="Tiendas anteriores">‹</button>
+          <button class="stores__nav" id="storesNext" aria-label="Tiendas siguientes">›</button>
+        </div>
+      </div>
+
+      <!-- Carrusel: edita nombre, categoría, descripción y el enlace href="..." de cada tienda -->
+      <div class="stores__track" id="storesTrack">
+        <article class="store-card">
+          <div class="store-card__media"><span class="store-card__monogram">V</span></div>
+          <div class="store-card__body">
+            <span class="store-card__cat">Tecnología</span>
+            <h3 class="store-card__name">VERNE Tech</h3>
+            <p class="store-card__desc">Gadgets, accesorios y dispositivos inteligentes para tu día a día conectado.</p>
+            <a href="#" target="_blank" rel="noopener" class="store-card__btn">Visitar tienda <span aria-hidden="true">→</span></a>
+          </div>
+        </article>
+
+        <article class="store-card">
+          <div class="store-card__media"><span class="store-card__monogram">V</span></div>
+          <div class="store-card__body">
+            <span class="store-card__cat">Hogar y Decoración</span>
+            <h3 class="store-card__name">VERNE Home</h3>
+            <p class="store-card__desc">Decoración, organización y detalles que transforman cualquier espacio del hogar.</p>
+            <a href="#" target="_blank" rel="noopener" class="store-card__btn">Visitar tienda <span aria-hidden="true">→</span></a>
+          </div>
+        </article>
+
+        <article class="store-card">
+          <div class="store-card__media"><span class="store-card__monogram">V</span></div>
+          <div class="store-card__body">
+            <span class="store-card__cat">Mascotas</span>
+            <h3 class="store-card__name">VERNE Pets</h3>
+            <p class="store-card__desc">Todo para consentir a tus mascotas: juguetes, accesorios y artículos de cuidado.</p>
+            <a href="#" target="_blank" rel="noopener" class="store-card__btn">Visitar tienda <span aria-hidden="true">→</span></a>
+          </div>
+        </article>
+
+        <article class="store-card">
+          <div class="store-card__media"><span class="store-card__monogram">V</span></div>
+          <div class="store-card__body">
+            <span class="store-card__cat">Belleza</span>
+            <h3 class="store-card__name">VERNE Beauty</h3>
+            <p class="store-card__desc">Cosmética, cuidado de la piel y accesorios de belleza de última tendencia.</p>
+            <a href="#" target="_blank" rel="noopener" class="store-card__btn">Visitar tienda <span aria-hidden="true">→</span></a>
+          </div>
+        </article>
+
+        <article class="store-card">
+          <div class="store-card__media"><span class="store-card__monogram">V</span></div>
+          <div class="store-card__body">
+            <span class="store-card__cat">Deportes y Fitness</span>
+            <h3 class="store-card__name">VERNE Fit</h3>
+            <p class="store-card__desc">Equipamiento y accesorios para entrenar dentro y fuera de casa.</p>
+            <a href="#" target="_blank" rel="noopener" class="store-card__btn">Visitar tienda <span aria-hidden="true">→</span></a>
+          </div>
+        </article>
+
+        <article class="store-card">
+          <div class="store-card__media"><span class="store-card__monogram">V</span></div>
+          <div class="store-card__body">
+            <span class="store-card__cat">Moda y Accesorios</span>
+            <h3 class="store-card__name">VERNE Style</h3>
+            <p class="store-card__desc">Prendas, bolsos y accesorios para completar tu look con estilo.</p>
+            <a href="#" target="_blank" rel="noopener" class="store-card__btn">Visitar tienda <span aria-hidden="true">→</span></a>
+          </div>
+        </article>
+
+        <article class="store-card">
+          <div class="store-card__media"><span class="store-card__monogram">V</span></div>
+          <div class="store-card__body">
+            <span class="store-card__cat">Bebés y Niños</span>
+            <h3 class="store-card__name">VERNE Kids</h3>
+            <p class="store-card__desc">Productos prácticos y seguros para el cuidado de los más pequeños.</p>
+            <a href="#" target="_blank" rel="noopener" class="store-card__btn">Visitar tienda <span aria-hidden="true">→</span></a>
+          </div>
+        </article>
+
+        <article class="store-card">
+          <div class="store-card__media"><span class="store-card__monogram">V</span></div>
+          <div class="store-card__body">
+            <span class="store-card__cat">Cocina</span>
+            <h3 class="store-card__name">VERNE Kitchen</h3>
+            <p class="store-card__desc">Utensilios y gadgets que hacen de cocinar una experiencia simple y práctica.</p>
+            <a href="#" target="_blank" rel="noopener" class="store-card__btn">Visitar tienda <span aria-hidden="true">→</span></a>
+          </div>
+        </article>
+
+        <article class="store-card">
+          <div class="store-card__media"><span class="store-card__monogram">V</span></div>
+          <div class="store-card__body">
+            <span class="store-card__cat">Bienestar y Salud</span>
+            <h3 class="store-card__name">VERNE Wellness</h3>
+            <p class="store-card__desc">Bienestar, relajación y cuidado para tu cuerpo y tu mente.</p>
+            <a href="#" target="_blank" rel="noopener" class="store-card__btn">Visitar tienda <span aria-hidden="true">→</span></a>
+          </div>
+        </article>
+
+        <article class="store-card">
+          <div class="store-card__media"><span class="store-card__monogram">V</span></div>
+          <div class="store-card__body">
+            <span class="store-card__cat">Aire Libre</span>
+            <h3 class="store-card__name">VERNE Outdoor</h3>
+            <p class="store-card__desc">Equipo para tus aventuras al aire libre, viajes y camping.</p>
+            <a href="#" target="_blank" rel="noopener" class="store-card__btn">Visitar tienda <span aria-hidden="true">→</span></a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- BLOQUE 3: POR QUÉ VERNE -->
+  <section class="section" id="works">
+    <div class="section__container">
+      <span class="section__tag reveal">03 — Por qué VERNE</span>
       <h2 class="section__title reveal">Por qué comprar en VERNE</h2>
       <div class="section__divider reveal"></div>
       <div class="works__grid">
@@ -145,9 +264,9 @@
   </section>
 
   <!-- BLOQUE 4: CÓMO COMPRAR -->
-  <section class="section" id="services">
+  <section class="section section--alt" id="services">
     <div class="section__container">
-      <span class="section__tag reveal">03 — Cómo Comprar</span>
+      <span class="section__tag reveal">04 — Cómo Comprar</span>
       <h2 class="section__title reveal">Tu Experiencia de Compra</h2>
       <div class="section__divider reveal"></div>
       <div class="services__list">
@@ -184,9 +303,9 @@
   </section>
 
   <!-- BLOQUE 5: VISIÓN -->
-  <section class="section section--alt" id="vision">
+  <section class="section" id="vision">
     <div class="section__container">
-      <span class="section__tag reveal">04 — Visión</span>
+      <span class="section__tag reveal">05 — Visión</span>
       <h2 class="section__title reveal">Visión de la Empresa</h2>
       <div class="section__divider reveal"></div>
       <div class="vision__content">
@@ -214,7 +333,7 @@
   <!-- BLOQUE 6: CONTACTO / CTA -->
   <section class="cta" id="contact">
     <div class="cta__container reveal">
-      <span class="cta__tag">05 — Contacto</span>
+      <span class="cta__tag">06 — Contacto</span>
       <h2 class="cta__title">¿Tienes dudas sobre un producto o tu pedido?</h2>
       <p class="cta__text">
         Escríbenos por WhatsApp o correo y te ayudamos con tu compra, el seguimiento de
@@ -237,7 +356,7 @@
         </div>
         <nav class="footer__nav" aria-label="Pie de página">
           <a href="#about">Acerca de</a>
-          <a href="#works">Tienda</a>
+          <a href="#stores">Tiendas</a>
           <a href="#services">Cómo Comprar</a>
           <a href="#vision">Visión</a>
           <a href="#contact">Contacto</a>
@@ -272,16 +391,47 @@
     /* ---- Hamburger menu ---- */
     const burger   = document.getElementById('burger');
     const navLinks = document.getElementById('navLinks');
-    burger.addEventListener('click', () => {
-      navLinks.classList.toggle('open');
-      burger.classList.toggle('active');
+    const setMenu = (open) => {
+      navLinks.classList.toggle('open', open);
+      burger.classList.toggle('active', open);
+    };
+    burger.addEventListener('click', (e) => {
+      e.stopPropagation();
+      setMenu(!navLinks.classList.contains('open'));
     });
     navLinks.querySelectorAll('a').forEach(link => {
-      link.addEventListener('click', () => {
-        navLinks.classList.remove('open');
-        burger.classList.remove('active');
-      });
+      link.addEventListener('click', () => setMenu(false));
     });
+    /* Cerrar el menú al tocar fuera */
+    document.addEventListener('click', (e) => {
+      if (navLinks.classList.contains('open') &&
+          !navLinks.contains(e.target) && !burger.contains(e.target)) {
+        setMenu(false);
+      }
+    });
+
+    /* ---- Carrusel de tiendas ---- */
+    const track = document.getElementById('storesTrack');
+    if (track) {
+      const prev = document.getElementById('storesPrev');
+      const next = document.getElementById('storesNext');
+      const step = () => {
+        const card = track.querySelector('.store-card');
+        if (!card) return track.clientWidth * 0.8;
+        const gap = parseFloat(getComputedStyle(track).columnGap) || 0;
+        return card.offsetWidth + gap;
+      };
+      const updateArrows = () => {
+        const maxScroll = track.scrollWidth - track.clientWidth - 2;
+        prev.disabled = track.scrollLeft <= 2;
+        next.disabled = track.scrollLeft >= maxScroll;
+      };
+      prev.addEventListener('click', () => track.scrollBy({ left: -step(), behavior: 'smooth' }));
+      next.addEventListener('click', () => track.scrollBy({ left:  step(), behavior: 'smooth' }));
+      track.addEventListener('scroll', updateArrows, { passive: true });
+      window.addEventListener('resize', updateArrows);
+      updateArrows();
+    }
 
     /* ---- Reveal on scroll ---- */
     const revealEls = document.querySelectorAll('.reveal');
